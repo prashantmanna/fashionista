@@ -15,6 +15,8 @@ class HomeScreen extends StatelessWidget {
           children: [
             SizedBox(height: 30,),
             Customappbar(),
+            SizedBox(height: 20,),
+            SearchBar(),
           ],
         ),),
       ),
