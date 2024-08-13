@@ -1,3 +1,6 @@
+import 'package:fashionista/cart/cart_screen.dart';
+import 'package:fashionista/screens/Home_Screen.dart';
+import 'package:fashionista/screens/favourite.dart';
 import 'package:fashionista/utils/constants.dart';
 import 'package:flutter/material.dart';
 class Bottomnavbar extends StatefulWidget {
@@ -9,6 +12,13 @@ class Bottomnavbar extends StatefulWidget {
 
 class _BottomnavbarState extends State<Bottomnavbar> {
 
+  List screens = const [
+    Scaffold(),
+    favourite(),
+    HomeScreen(),
+    CartScreen(),
+    Scaffold()
+  ];
   int currentIndex = 2;
   @override
   Widget build(BuildContext context) {
@@ -18,6 +28,7 @@ class _BottomnavbarState extends State<Bottomnavbar> {
           setState(() {
             currentIndex = 2;
           });
+
         },
         shape: CircleBorder(),
         backgroundColor: Colors.redAccent,
@@ -30,7 +41,7 @@ class _BottomnavbarState extends State<Bottomnavbar> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
         elevation: 1,
-        color: constants.mainColor,
+        color: Colors.white,
         height: 60,
         shape: const CircularNotchedRectangle(),
         notchMargin: 10,
@@ -43,22 +54,23 @@ class _BottomnavbarState extends State<Bottomnavbar> {
               setState(() {
                 currentIndex = 0;
               });
-            }, icon: Icon(Icons.grid_view_outlined,size: 30,color: currentIndex == 0?constants.mainColor:Colors.grey,)),
+            }, icon: Icon(Icons.grid_view_outlined,size: 30,color: Colors.grey.shade400)),
             IconButton(onPressed: (){
               setState(() {
                 currentIndex = 1;
               });
-            }, icon: Icon(Icons.favorite_border,size: 30,color: currentIndex == 1?constants.mainColor:Colors.grey,)),
+            }, icon: Icon(Icons.favorite_border,size: 30,color: Colors.grey.shade400,)),
             SizedBox(width: 15,),
             IconButton(onPressed: (){
               currentIndex = 3;
-            }, icon: Icon(Icons.shopping_cart_outlined,size: 30,color: currentIndex == 3?constants.mainColor:Colors.grey,)),
+            }, icon: Icon(Icons.shopping_cart_outlined,size: 30,color: Colors.grey.shade400,)),
             IconButton(onPressed: (){
               currentIndex = 4;
-            }, icon: Icon(Icons.person,size: 30,color: currentIndex == 4?constants.mainColor:Colors.grey,))
+            }, icon: Icon(Icons.person,size: 30,color: Colors.grey.shade400,))
           ],
         ),
       ),
+      body: screens[currentIndex],
     );
   }
 }
