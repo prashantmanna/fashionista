@@ -1,4 +1,5 @@
 import 'package:fashionista/utils/constants.dart';
+import 'package:fashionista/widgets/SearchAppBar.dart';
 import 'package:fashionista/widgets/customAppBar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,7 @@ class HomeScreen extends StatelessWidget {
             SizedBox(height: 30,),
             Customappbar(),
             SizedBox(height: 20,),
-            SearchBar(),
+            SearchAppBar()
           ],
         ),),
       ),
