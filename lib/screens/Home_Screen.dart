@@ -38,7 +38,21 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
               ),
               const SizedBox(height: 20,),
-              Mycategory()
+              Mycategory(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Special for you",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25),),
+                  Text("See all",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16,color: Colors.black54),),
+
+                ],
+              ),
+              GridView.builder(
+                  itemCount: products.length,
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+                  itemBuilder: (context,index){
+                return;
+                  })
             ],
           ),
         ),
