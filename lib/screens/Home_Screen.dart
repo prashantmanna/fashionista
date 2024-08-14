@@ -1,7 +1,9 @@
+import 'package:fashionista/models/products.dart';
 import 'package:fashionista/widgets/SearchAppBar.dart';
 import 'package:fashionista/widgets/customAppBar.dart';
 import 'package:fashionista/widgets/images_slider.dart';
 import 'package:fashionista/widgets/myCategory.dart';
+import 'package:fashionista/widgets/products_cart.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -48,10 +50,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
               GridView.builder(
+                  physics: NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
                   itemCount: products.length,
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
                   itemBuilder: (context,index){
-                return;
+                return ProductsCart
+                  (p1: products[index]);
                   })
             ],
           ),
