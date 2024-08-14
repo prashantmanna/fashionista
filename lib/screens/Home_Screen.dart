@@ -1,6 +1,7 @@
 import 'package:fashionista/widgets/SearchAppBar.dart';
 import 'package:fashionista/widgets/customAppBar.dart';
 import 'package:fashionista/widgets/images_slider.dart';
+import 'package:fashionista/widgets/myCategory.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -36,7 +37,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   });
                 },
               ),
-              const SizedBox(height: 20,)
+              const SizedBox(height: 20,),
+              Mycategory()
             ],
           ),
         ),
