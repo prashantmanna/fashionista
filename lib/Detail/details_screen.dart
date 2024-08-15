@@ -1,4 +1,5 @@
 import 'package:fashionista/Detail/MyImageSlider.dart';
+import 'package:fashionista/Detail/addto_cart.dart';
 import 'package:fashionista/Detail/description.dart';
 import 'package:fashionista/Detail/details_app_bar.dart';
 import 'package:fashionista/Detail/item_details.dart';
@@ -24,6 +25,8 @@ class _DetailsScreenState extends State<DetailsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      floatingActionButton: AddtoCart(p4: widget.p2,),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
