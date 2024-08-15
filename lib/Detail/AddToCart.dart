@@ -1,8 +1,8 @@
 import 'package:fashionista/models/products.dart';
 import 'package:flutter/material.dart';
-class AddtoCart extends StatelessWidget {
+class AddToCart extends StatelessWidget {
   final product p4;
-  const AddtoCart({super.key, required this.p4});
+  const AddToCart({super.key, required this.p4});
 
   @override
   Widget build(BuildContext context) {
