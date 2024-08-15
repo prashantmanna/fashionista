@@ -14,7 +14,9 @@ class DetailsAppBar extends StatelessWidget {
         backgroundColor: constants.mainColor,
         padding:const EdgeInsets.all(20),
     ),
-    onPressed: (){}, icon: const Icon(Icons.arrow_back_ios),
+    onPressed: (){
+          Navigator.pop(context);
+    }, icon: const Icon(Icons.arrow_back_ios),
       ),
           const Spacer(),
           IconButton(onPressed: (){}, icon: const Icon(Icons.share_outlined),
