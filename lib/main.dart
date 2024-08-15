@@ -1,5 +1,7 @@
+import 'package:fashionista/provider/cart_provider.dart';
 import 'package:fashionista/screens/BottomNavBar.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,8 +11,11 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
+  Widget build(BuildContext context) => MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => CartProvider())
+      ],
+      child :MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -18,8 +23,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const Bottomnavbar(),
-    );
-  }
+    ),
+  );
 }
 
 
