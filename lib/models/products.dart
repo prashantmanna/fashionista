@@ -35,9 +35,11 @@ final List<product> products = [
       price: 120,
       seller: "BoAt",
       colors: [
-        Colors.black,
+
         Colors.blue,
-        Colors.white
+        Colors.grey,
+        Colors.red,
+        Colors.black,
       ],
       category: "Electronics",
       review: "(320 reviews)",
@@ -53,19 +55,20 @@ final List<product> products = [
       seller: "fastrack",
       colors: [
         Colors.teal.shade900,
+        Colors.green,
         Colors.black,
-        Colors.white70
       ],
       category: "Electronics", review: "(99 reviews)", rate: 4.1, quantity: 1),
   product(title: "Formal Shirt", description: "Formal t-shirts for mens", image: "images/men1.jpg", price: 349, seller: "Cocoblu Retail", colors: [
-    Colors.white,
+    Colors.lightBlueAccent,
     Colors.grey,
     Colors.black
   ], category: "Clothes", review: "(199 reviews)", rate: 4.4, quantity: 1),
-  product(title: "Laptop", description: "Acer [Smartchoice] Aspire Lite AMD "
+  product(title: "Acer Aspire Lite", description: "Acer [Smartchoice] Aspire Lite AMD "
       "Ryzen 3 5300U Premium Thin and Light Laptop (Windows 11 "
   "Full HD Display, Metal Body, Steel Gray, 1.6 KG"
   ,image: "images/acer.jpg", price: 26990, seller: "Acer", colors: [
-    Colors.white
+    Colors.grey,
+        Colors.black
 ], category: "Electronics", review: "(501 reviews)", rate: 3.7, quantity: 1)
 ];

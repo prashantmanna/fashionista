@@ -1,3 +1,4 @@
+import 'package:fashionista/Detail/details_screen.dart';
 import 'package:fashionista/models/products.dart';
 import 'package:fashionista/utils/constants.dart';
 import 'package:flutter/material.dart';
@@ -9,7 +10,9 @@ class ProductsCart extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return GestureDetector(
-      onTap: (){},
+      onTap: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=> DetailsScreen(p2: p1)),);
+      },
       child: Stack(
         children: [
           Container(
@@ -36,6 +39,25 @@ class ProductsCart extends StatelessWidget {
                     fontSize: 16
                   ),),
                 ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text("\$${p1.price}",style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 17
+                    ),),
+                    Row(children: List.generate(p1.colors.length, (index) =>
+                    Container(
+                      width: 18,
+                      height: 18,
+                      margin: EdgeInsets.only(right: 4),
+                      decoration: BoxDecoration(
+                        color: p1.colors[index],
+                        shape: BoxShape.circle
+                      ),
+                    )),)
+                  ],
+                )
 
               ],
             ),
