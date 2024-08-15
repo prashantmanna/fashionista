@@ -16,6 +16,19 @@ class CartProvider extends ChangeNotifier{
     notifyListeners();
   }
 
+
+
+
+  incrementQ(int index) => _cart[index].quantity++;
+  decrementQ(int index) => _cart[index].quantity == 0?0:_cart[index].quantity--;
+
+  totalPrice(){
+    double total1 = 0.0;
+    for(product item in _cart){
+      total1 += item.price * item.quantity;
+    }
+    return total1;
+  }
   static CartProvider of(BuildContext context,{
     bool listen = true,
   }){

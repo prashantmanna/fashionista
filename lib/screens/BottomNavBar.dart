@@ -60,12 +60,16 @@ class _BottomnavbarState extends State<Bottomnavbar> {
                 currentIndex = 1;
               });
             }, icon: Icon(Icons.favorite_border,size: 30,color: Colors.grey.shade400,)),
-            SizedBox(width: 15,),
+            const SizedBox(width: 15,),
             IconButton(onPressed: (){
-              currentIndex = 3;
+              setState(() {
+                currentIndex = 3;
+              });
             }, icon: Icon(Icons.shopping_cart_outlined,size: 30,color: Colors.grey.shade400,)),
             IconButton(onPressed: (){
-              currentIndex = 4;
+              setState(() {
+                currentIndex = 4;
+              });
             }, icon: Icon(Icons.person,size: 30,color: Colors.grey.shade400,))
           ],
         ),
