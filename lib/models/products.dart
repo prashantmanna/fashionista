@@ -243,3 +243,97 @@ final List<product> laptops = [
 
 ];
 
+final List<product> shoes = [
+  product(title: "Boldfit Shoes",
+      description: "Boldfit Walking Shoes for Men Slip On Shoes for Men Cushion Shoes Without Laces for Men Jogging Shoes for Men Regular Wear Without Lace Shoes for Men Soft Shoes for Men Without Laces Slip Ons for Men",
+      image: "images/shoes1.jpg",
+      price: 899,
+      seller: "BoldFit",
+      colors: [
+
+      ],
+      category: "Shoes",
+      review: "(322 reviews)",
+      rate: 4.6,
+      quantity: 1),
+  product(title: "ASIAN MEN",
+      description: "Boldfit Walking Shoes for Men Slip On Shoes for Men Cushion Shoes Without Laces for Men Jogging Shoes for Men Regular Wear Without Lace Shoes for Men Soft Shoes for Men Without Laces Slip Ons for Men",
+      image: "images/shoes3.jpg",
+      price: 829,
+      seller: "ASIAN MEN",
+      colors: [
+
+      ],
+      category: "Shoes",
+      review: "(432 reviews)",
+      rate: 4.6,
+      quantity: 1),
+  product(title: "ASIAN MEN",
+      description: "ASIAN Men's Mexico-02 Casual Sneaker Shoes",
+      image: "images/shoes4.jpg",
+      price: 829,
+      seller: "ASIAN MEN",
+      colors: [
+
+      ],
+      category: "Shoes",
+      review: "(532 reviews)",
+      rate: 4.6,
+      quantity: 1),
+  product(title: "PUMA",
+      description: "Puma Men's Dazzler Sneakers",
+      image: "images/shoes5.jpg",
+      price: 569,
+      seller: "PUMA",
+      colors: [
+
+      ],
+      category: "Shoes",
+      review: "(532 reviews)",
+      rate: 4.6,
+      quantity: 1),
+];
+
+final List<product> formal = [
+  product(title: "Amazon Brand",
+      description: "Amazon Brand - Symbol Men's Cotton Rich Formal Shirt | Plain | Full Sleeve - Regular Fit (Available in Plus Size)",
+      image: "images/shirt1.jpg",
+      price: 549,
+      seller: "Amazon",
+      colors: [
+
+      ],
+      category: "Clothes",
+      review: "(322 reviews)",
+      rate: 4.5,
+      quantity: 1),
+  product(title: "Henrik Shirts",
+      description: "Henrik Shirts - Premium Formal Cotton Cufflink Shirts for Men with Free Cuff Links",
+      image: "images/shirt2.jpg",
+      price: 549,
+      seller: "Henrik Shirts",
+      colors: [
+
+      ],
+      category: "Clothes",
+      review: "(302 reviews)",
+      rate: 4.7,
+      quantity: 1),
+
+];
+
+final List<product> jwellery = [
+  product(title: "FABUNORA Special",
+      description: "FABUNORA Special Sorry Gift for Girlfriend/Wife- Pure Silver Necklace Gift Set With Certificate of Authenticity and 925 Stamp (Yellow Gold Finish)",
+      image: "images/jwellery1.jpg", price: 2899, seller: "FABUNORA", colors: [], category: "Jwellery", review: "(427 reviews)", rate: 4.2, quantity: 1),
+  product(title: "Shining Diva",
+      description: "Shining Diva Fashion Latest Stylish Design Fancy Pearl Choker Traditional Temple Necklace Jewellery Set for Women (14822s) (Golden)",
+      image: "images/neck.jpg",
+      price: 597, seller: "Shining Diva",
+      colors: [],
+      category: "Jwellery",
+      review: '(455 reviews)',
+      rate: 4.1,
+      quantity: 1)
+];
+

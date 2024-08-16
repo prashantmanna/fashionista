@@ -19,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
   int selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
-    List<List<product>> selectedCategories = [all,cosmetics,laptops];
+    List<List<product>> selectedCategories = [all,cosmetics,laptops,shoes,formal,jwellery];
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
