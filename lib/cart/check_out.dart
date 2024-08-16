@@ -2,9 +2,14 @@ import 'package:fashionista/provider/cart_provider.dart';
 import 'package:fashionista/utils/constants.dart';
 import 'package:flutter/material.dart';
 
-class CheckOut extends StatelessWidget {
+class CheckOut extends StatefulWidget {
   const CheckOut({super.key});
 
+  @override
+  State<CheckOut> createState() => _CheckOutState();
+}
+
+class _CheckOutState extends State<CheckOut> {
   @override
   Widget build(BuildContext context) {
     final provider = CartProvider.of(context);

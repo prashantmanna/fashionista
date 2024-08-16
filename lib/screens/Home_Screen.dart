@@ -18,6 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    List<List<product>> selectedCategories = [];
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
@@ -52,12 +53,12 @@ class _HomeScreenState extends State<HomeScreen> {
               GridView.builder(
                   physics: NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
-                  itemCount: products.length,
+                  itemCount: all.length,
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,childAspectRatio: 0.78
                   , crossAxisSpacing: 10),
                   itemBuilder: (context,index){
                 return ProductsCart
-                  (p1: products[index]);
+                  (p1: all[index]);
                   })
             ],
           ),

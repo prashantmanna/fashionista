@@ -31,7 +31,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
         child: SingleChildScrollView(
           child: Column(
               children: [
-                const DetailsAppBar(),
+                DetailsAppBar(p6:widget.p2),
                 MyImageSlider(image: widget.p2.image, onChange: (index) {
                   setState(() {
                     currentImage = index;

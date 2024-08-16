@@ -1,4 +1,5 @@
 import 'package:fashionista/provider/cart_provider.dart';
+import 'package:fashionista/provider/FavouriteProvider.dart';
 import 'package:fashionista/screens/BottomNavBar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) => MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => CartProvider())
+        ChangeNotifierProvider(create: (_) => CartProvider()),
+        ChangeNotifierProvider(create: (_) => FavouriteProvider())
       ],
       child :MaterialApp(
       debugShowCheckedModeBanner: false,
