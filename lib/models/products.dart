@@ -102,8 +102,144 @@ final List<product> all = [
       ], category: "Electronics",
       review: "(756 reviews)",
       rate: 4.1,
+      quantity: 1),
+  product(title: "Leriya fashion",
+      description: "Leriya Fashion Shirt for Men | Tropical Leaf Printed Rayon Shirts for Men | Preppy Short Sleeves | Spread Collared Neck | Perfect for Outing | Beach | Camp Wear Shirt for Boys",
+      image: "images/shirt.jpg",
+      price: 309,
+      seller: "Leriya Fashion",
+      colors: [
+        Colors.green,
+        Colors.white
+      ],
+      category: "Clothes",
+      review: "(201 reviews)",
+      rate: 3.9,
+      quantity: 1),
+  product(title: "Boult K40",
+      description: "Boult Audio K40 True Wireless in Ear Earbuds with 48H Playtime, Clear Calling 4 Mics, 45ms Low Latency Gaming, Premium Grip, 13mm Bass Drivers, Type-C Fast Charging, BTv 5.3 Ear Buds TWS (Berry Red)",
+      image: "images/earbud.jpg",
+      price: 999,
+      seller: "Boult",
+      colors: [
+        Colors.red,
+        Colors.blue
+      ],
+      category: "Electronics",
+      review: "(3120 reviews)", rate: 4.6, quantity: 1),
+  product(title: "Lymio Mens Jeans",
+      description: "Lymio Men Jeans || Men Jeans Pants || Denim Jeans || Baggy Jeans for Men (Jeans-06-07-08)",
+      image: "images/blueJeans.jpg",
+      price: 749,
+      seller: "Lymio jeans",
+      colors: [
+        Colors.blue,
+        Colors.blue.shade900
+      ],
+      category: "Clothes",
+      review: "(3200 reviews)",
+      rate: 4.1,
       quantity: 1)
 ];
 
 
+final List<product> cosmetics = [
+  product(title: "MAYBELLINE",
+      description: "MAYBELLINE fit me pressed matte oily skin",
+      image: "images/cos1.jpg",
+      price: 182,
+      seller: "MAYBELLINE",
+      colors: [
+
+      ],
+      category: "Cosmetics",
+      review: "(400 review)",
+      rate: 4.3,
+      quantity: 1),
+  product(title: "LAKMÉ 9",
+      description: "LAKMÉ 9 To 5 Cc Cream Mini|| 01-Beige|| Light Face Makeup With Natural Coverage For All Skin|| Spf 30-Tinted Moisturizer To Brighten Skin|| Conceal Dark Spots|| 9 G,1 Count",
+      image: "images/lakme.jpg",
+      price: 99,
+      seller: "LAKME",
+      colors: [
+
+      ],
+      category: "Cosmetics",
+      review: "(99 review)",
+      rate: 4.7,
+      quantity: 1),
+  product(title: "Lipstick",
+      description: "Maybelline New York Matte Lipstick, Intense Colour, Keeps Lips Moisturised, 660 Touch of Spice, Color Sensational Creamy Matte Lipstick, 3.9g",
+      image: "images/lipstick.jpg",
+      price: 99,
+      seller: "MAYBELLINE",
+      colors: [
+
+      ],
+      category: "Cosmetics",
+      review: "(199 review)",
+      rate: 4.9,
+      quantity: 1),
+  product(title: "Lip Bam",
+      description: "Insight Cosmetics Lip & Cheek Tint|Enriched with Vitamin E | Multipurpose|Lightweight Formula|100% Paraben Free| Long Lasting, B07-03",
+      image: "images/instant.jpg",
+      price: 105,
+      seller: "Instant Cosmetics",
+      colors: [
+
+      ],
+      category: "Cosmetics",
+      review: "(50 review)",
+      rate: 4.1,
+      quantity: 1)
+
+];
+
+final List<product> laptops = [
+  product(title: "DELL Thin Laptop",
+      description: "Dell 15 Thin & Light Laptop, 12th Gen Intel Core i5-1235U Processor, 8GB, 512GB SSD, 15.6 (38) cm FHD Display, Windows 11 MSO'21, 15 Month McAfee Antivirus, Black, Spill-Resistant Keyboard,1.66kg",
+      image: "images/dell.jpg",
+      price: 50000, 
+      seller: "DELL",
+      colors: [
+        
+      ],
+      category: "Electronics", 
+      review: "(450 review)", 
+      rate: 4.5, 
+      quantity: 1),
+  product(title: "Lenovo Ideapad",
+      description: "Lenovo IdeaPad Slim 3 12th Gen Intel Core i5-12450H 14 (35.5cm) FHD 250 Nits Thin & Light Laptop (16GB/512GB SSD/Win 11/Office 21/1Yr ADP Free/Alexa built-in/3 mon. Game Pass/Grey/1.37Kg), 83EQ005VIN",
+      image: "images/lenovo.jpg",
+      price: 50490,
+      seller: "Lenovo",
+      colors: [],
+      category: "Electronics",
+      review: "(199 reviews)",
+      rate: 4.3,
+      quantity: 1),
+  product(title: "Hp",
+      description: "Chuwi HeroBook Pro 14.1'' Intel Celeron N4020 Laptop with 8GB RAM, 256GB SSD, Windows 11, 1TB Expand, FHD IPS, Ultra Slim, USB3.0, Mini-HDMI, Webcam",
+      image: "images/chuwi.jpg",
+      price: 16990,
+      seller: "Hp",
+      colors: [],
+      category: "Electronics",
+      review: "(99 reviews)",
+      rate: 4.3,
+      quantity: 1),
+  product(title: "Lenovo",
+      description: "[Smart Choice] Lenovo IdeaPad Gaming 3 Laptop AMD Ryzen 5 5500H 15.6 (39.62cm) FHD IPS 300nits 144Hz (8GB/512GB SSD/Win 11/NVIDIA RTX 2050 4GB/Alexa/3 Month Game Pass/Shadow Black/2.32Kg), 82K20289IN",
+      image: "images/l.jpg",
+      price: 16990,
+      seller: "Lenovo",
+      colors: [],
+      category: "Electronics",
+      review: "(499 reviews)",
+      rate: 4.7,
+      quantity: 1),
+
+
+
+];
 

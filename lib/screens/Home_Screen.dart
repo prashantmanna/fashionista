@@ -15,10 +15,10 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int currentSlide = 0;
-
+  int selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
-    List<List<product>> selectedCategories = [];
+    List<List<product>> selectedCategories = [cosmetics,laptops];
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
@@ -53,12 +53,12 @@ class _HomeScreenState extends State<HomeScreen> {
               GridView.builder(
                   physics: NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
-                  itemCount: all.length,
+                  itemCount: selectedCategories[selectedIndex].length,
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,childAspectRatio: 0.78
                   , crossAxisSpacing: 10),
                   itemBuilder: (context,index){
                 return ProductsCart
-                  (p1: all[index]);
+                  (p1: selectedCategories[selectedIndex][index]);
                   })
             ],
           ),
