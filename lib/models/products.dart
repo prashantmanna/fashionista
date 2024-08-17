@@ -319,6 +319,33 @@ final List<product> formal = [
       review: "(302 reviews)",
       rate: 4.7,
       quantity: 1),
+  product(title: "Formal Trouser",
+      description: "MALENO Men Formal Trouser Regular Fit Solid | Soft and Breathable Pant Combo",
+      image: "images/arro.jpg",
+      price: 799,
+      seller: "MALENO Men Trouser",
+      colors: [
+
+      ],
+      category: "Clothes",
+      review: "(392 reviews)",
+      rate: 4.7,
+      quantity: 1),
+  product(title: "PETER ENGLAND",
+      description: "Peter England Men Work Regular Fit Utility Pants",
+      image: "images/pant.jpg",
+      price: 799,
+      seller: "PETER ENGLAND",
+      colors: [
+
+      ],
+      category: "Clothes",
+      review: "(692 reviews)",
+      rate: 4.1,
+      quantity: 1),
+
+
+
 
 ];
 

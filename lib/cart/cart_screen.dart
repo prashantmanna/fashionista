@@ -27,7 +27,7 @@ class _CartScreenState extends State<CartScreen> {
       );
     }
     return Scaffold(
-      bottomSheet: const CheckOut(),
+      bottomSheet: CheckOut(),
       backgroundColor: constants.mainColor,
       body: SafeArea(
         child: Column(

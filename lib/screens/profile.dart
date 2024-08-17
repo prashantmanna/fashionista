@@ -25,7 +25,7 @@ class Profile extends StatelessWidget {
                 ),
                 child: SingleChildScrollView(
                   child: Container(
-                    height: size.height * 0.4,
+                    height: size.height * 0.42,
                     padding:
                     const EdgeInsets.symmetric(horizontal: 8, vertical: 15),
                     child: Column(
@@ -105,7 +105,7 @@ class Profile extends StatelessWidget {
                               ),
                               const SizedBox(height: 10),
                               const Text(
-                                "Steve Jobs",
+                                "Rohit Mehra",
                                 style: TextStyle(
                                   fontWeight: FontWeight.w800,
                                   fontSize: 30,
