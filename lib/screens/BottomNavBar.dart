@@ -1,6 +1,7 @@
 import 'package:fashionista/cart/cart_screen.dart';
 import 'package:fashionista/favourite/favourite.dart';
 import 'package:fashionista/screens/Home_Screen.dart';
+import 'package:fashionista/screens/profile.dart';
 import 'package:flutter/material.dart';
 class Bottomnavbar extends StatefulWidget {
   const Bottomnavbar({super.key});
@@ -16,7 +17,7 @@ class _BottomnavbarState extends State<Bottomnavbar> {
     favourite(),
     HomeScreen(),
     CartScreen(),
-    Scaffold()
+    Profile()
   ];
   int currentIndex = 2;
   @override
